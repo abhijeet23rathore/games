@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <h1>Emoji Snake</h1>
+        <div class="game-info">
+            <span>Score: <span id="score">0</span> / <span id="scoreTarget">10</span></span>
+            <span>Level: <span id="level">1</span></span>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOver" class="overlay-message hidden">Game Over!<br><small>Press 'R' to Restart</small></div>
+            <div id="levelUpMessage" class="overlay-message hidden"></div>
+        </div>
+    </main>
+    <a href="../index.html" class="back-link">← Back to Arcade</a>
+    <script src="script.js"></script>
+</body>
+</html>

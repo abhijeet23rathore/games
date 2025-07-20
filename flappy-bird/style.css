@@ -1,0 +1,78 @@
+body {
+    background: #1a1a1a linear-gradient(180deg, #333 0%, #1a1a1a 100%);
+    color: #eee;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+h1 {
+    color: #ff9ff3;
+    text-shadow: 3px 3px 0px #c77da9;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+canvas {
+    background: #70c5ce; /* Sky color */
+    border: 3px solid #ff9ff3;
+    box-shadow: 0 0 20px #ff9ff3, 0 0 30px #ff9ff3 inset;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.score-display {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff4136;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 0px #85144b;
+    pointer-events: none;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-link {
+    margin-top: 10px;
+    color: #ff9ff3;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s ease-in-out;
+}
+
+.back-link:hover {
+    color: #fff;
+}
